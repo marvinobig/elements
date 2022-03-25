@@ -1,3 +1,4 @@
+import "./reset.css";
 import "./index.scss";
 import { getLocationCoordinates } from "./modules/locationCoordinates";
 import { getWeatherData } from "./modules/weatherData";
