@@ -7,7 +7,7 @@ async function getWeatherData() {
       "&lon=" +
       lon +
       "&exclude=minutely,hourly,alerts&appid=56ee2236b5d006c6606bcbf8167154c3",
-      { mode: "cors" }
+    { mode: "cors" }
   );
   const result = await weather.json();
   console.log(result);
