@@ -7,12 +7,44 @@
     <title>Elements</title>
 
     <!-- Google Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <!-- JavaScript File -->
     <script src="./bundle.js" defer></script>
 </head>
 <body>
-    
+    <div id="search-container">
+        <input type="text" name="search" id="search" placeholder="Enter Location">
+        <button type="button" id="submit" class="material-icons">send</button>
+    </div>
+    <main id="weather-container">
+        <section id="current-weather">
+            <div class="main">
+                <img id="current-weather-icon" src="">
+                <p id="location">City / State</p>
+                <p id="temp"></p>
+            </div>
+            <div class="description">
+                <div class="description-card">
+                    <p class="title">Description</p>
+                    <p id="current-weather-description"></p>
+                </div>
+                <div class="description-card">
+                    <p class="title">Feels Like</p>
+                    <p id="feels-like"></p>
+                </div>
+                <div class="description-card">
+                    <p class="title">Humidity</p>
+                    <p id="humidity"></p>
+                </div>
+                <div class="description-card">
+                    <p class="title">Wind Speed</p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+        </section>
+        <section id="daily-forecast"></section>
+    </main>
 </body>
 </html>
