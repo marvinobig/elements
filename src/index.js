@@ -1,13 +1,12 @@
 import "./stylesheets/reset.css";
 import "./stylesheets/index.scss";
-import { getLocationCoordinates } from "./modules/locationCoordinates";
-import { getWeatherData } from "./modules/weatherData";
+import { getLocationCoordinates } from "./modules/weatherData";
 
 const searchBtn = document.getElementById("submit");
 searchBtn.addEventListener("click", app);
 
-
 function app() {
-    getLocationCoordinates();
-    getWeatherData();
+  getLocationCoordinates().catch((err) => {
+    console.log(err);
+  });
 }
