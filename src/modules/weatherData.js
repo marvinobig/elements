@@ -1,3 +1,5 @@
+import { currentWeatherDisplay, locationDisplay } from "./weatherDisplay"
+
 let lat = 0;
 let lon = 0;
 
@@ -12,6 +14,8 @@ async function getLocationCoordinates() {
   );
 
   const result = await coordinates.json();
+
+  locationDisplay(result[0])
 
   lat = result[0].lat;
   lon = result[0].lon;
@@ -30,6 +34,9 @@ async function getWeatherData() {
     { mode: "cors" }
   );
   const result = await weather.json();
+
+  currentWeatherDisplay(result);
+
   console.log(result);
 }
 
