@@ -13,11 +13,11 @@ function currentWeatherDisplay(data) {
 
   icon.src = `http://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`;
   icon.alt = "current weather icon";
-  temp.textContent = `${data.current.temp}°`;
+  temp.textContent = `${Math.round(data.current.temp)}°`;
   description.textContent = `${data.current.weather[0].description}`;
-  feelsLike.textContent = `${data.current.feels_like}°`;
+  feelsLike.textContent = `${Math.round(data.current.feels_like)}°`;
   humidity.textContent = `${data.current.humidity}%`;
-  windSpeed.textContent = `${data.current.wind_speed} m/s`;
+  windSpeed.textContent = `${Math.round(data.current.wind_speed)} m/s`;
 }
 
 function dailyWeatherDisplay(data) {
@@ -38,9 +38,9 @@ function dailyWeatherDisplay(data) {
     temp.classList.add("daily-temp");
     description.classList.add("daily-description");
 
-    dailyDay.textContent = i;
+    dailyDay.textContent = `D${i}`;
     dailyIcon.src = `http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
-    temp.textContent = `${data.daily[i].temp.min}° / ${data.daily[i].temp.max}°`;
+    temp.textContent = `${Math.round(data.daily[i].temp.min)}° / ${Math.round(data.daily[i].temp.max)}°`;
     description.textContent = `${data.daily[i].weather[0].description}`;
 
     dailyCardContainer.appendChild(dailyCard);
