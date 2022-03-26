@@ -1,4 +1,4 @@
-import { currentWeatherDisplay, locationDisplay } from "./weatherDisplay"
+import { dailyWeatherDisplay, currentWeatherDisplay, locationDisplay } from "./weatherDisplay"
 
 let lat = 0;
 let lon = 0;
@@ -36,6 +36,7 @@ async function getWeatherData() {
   const result = await weather.json();
 
   currentWeatherDisplay(result);
+  dailyWeatherDisplay(result);
 
   console.log(result);
 }

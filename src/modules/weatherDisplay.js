@@ -20,4 +20,11 @@ function currentWeatherDisplay(data) {
   windSpeed.textContent = `${data.current.wind_speed} m/s`
 }
 
-export { locationDisplay, currentWeatherDisplay };
+
+function dailyWeatherDisplay(data) {
+    const dailyCardContainer = document.getElementById("daily-forecast")
+    const dailyCard = document.createElement("div");
+    const dailyIcon = document.createElement("img");
+}
+
+export { locationDisplay, currentWeatherDisplay, dailyWeatherDisplay };
