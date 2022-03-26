@@ -19,9 +19,8 @@ async function getLocationCoordinates() {
 
   lat = result[0].lat;
   lon = result[0].lon;
-  console.log(result, lat, lon);
 
-  getWeatherData();
+  getWeatherData().catch(err => console.log(err));
 }
 
 async function getWeatherData() {
@@ -37,8 +36,6 @@ async function getWeatherData() {
 
   currentWeatherDisplay(result);
   dailyWeatherDisplay(result);
-
-  console.log(result);
 }
 
 export { getLocationCoordinates };
