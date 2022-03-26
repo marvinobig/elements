@@ -1,3 +1,22 @@
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#006993, #aeaeae);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #1fb1c8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #105a78;
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -85,6 +104,16 @@ body {
     backdrop-filter: contrast(45%);
     backdrop-filter: brightness(130%);
     overflow-y: scroll;
+    
+    &::-webkit-scrollbar-track {
+      background: inherit;
+      border-radius: 0 8px 8px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #1fb1c8;
+      border-radius: 0 8px 8px 0;
+    }
 }
 
 @media only screen and (max-width: 720px) {
