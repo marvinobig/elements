@@ -17,7 +17,7 @@ function currentWeatherDisplay(data) {
   description.textContent = `${data.current.weather[0].description}`;
   feelsLike.textContent = `${data.current.feels_like}°`;
   humidity.textContent = `${data.current.humidity}%`;
-  windSpeed.textContent = `${data.current.wind_speed} mph`
+  windSpeed.textContent = `${data.current.wind_speed} m/s`
 }
 
 export { locationDisplay, currentWeatherDisplay };
