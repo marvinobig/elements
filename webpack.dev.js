@@ -1,16 +1,12 @@
-const path = require("path");
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-module.exports = {
-  mode: "production",
-  entry: "./src/index.js",
-  devtool: "inline-source-map",
+module.exports = merge(common, {
+  mode: 'development',
+  devtool: 'inline-source-map',
   devServer: {
-    static: "./public",
-  },
-  output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "public"),
+    static: './public',
   },
   plugins: [new MiniCssExtractPlugin()],
   module: {
@@ -25,4 +21,4 @@ module.exports = {
       },
     ],
   },
-};
+});
