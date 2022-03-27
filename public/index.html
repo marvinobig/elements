@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elements</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/images/Weather App Logo Colour white background.ico">
+    <link
+      rel="icon"
+      href="./assets/images/Weather App Logo Colour white background.ico"
+    />
 
-    <!-- Google Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <!-- Google Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./stylesheet/elements.css">
+    <link rel="stylesheet" href="./stylesheet/elements.css" />
 
     <!-- JavaScript File -->
     <script src="./script/element.bundle.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="search-container">
-        <input type="text" name="search" id="search" placeholder="Enter Location">
-        <button type="button" id="submit" class="material-icons">send</button>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Enter Location"
+      />
+      <button type="button" id="submit" class="material-icons">send</button>
     </div>
     <main id="weather-container">
-        <section id="current-weather">
-            <div class="main">
-                <img id="current-weather-icon" src="">
-                <p id="location">City / State</p>
-                <p id="temp"></p>
-            </div>
-            <div class="description">
-                <div class="description-card">
-                    <p class="title">Description</p>
-                    <p id="current-weather-description"></p>
-                </div>
-                <div class="description-card">
-                    <p class="title">Feels Like</p>
-                    <p id="feels-like"></p>
-                </div>
-                <div class="description-card">
-                    <p class="title">Humidity</p>
-                    <p id="humidity"></p>
-                </div>
-                <div class="description-card">
-                    <p class="title">Wind Speed</p>
-                    <p id="wind-speed"></p>
-                </div>
-            </div>
-        </section>
-        <section id="daily-forecast"></section>
+      <section id="current-weather">
+        <div class="main">
+          <img id="current-weather-icon" src="" />
+          <p id="location">City / State</p>
+          <p id="temp"></p>
+        </div>
+        <div class="description">
+          <div class="description-card">
+            <p class="title">Description</p>
+            <p id="current-weather-description"></p>
+          </div>
+          <div class="description-card">
+            <p class="title">Feels Like</p>
+            <p id="feels-like"></p>
+          </div>
+          <div class="description-card">
+            <p class="title">Humidity</p>
+            <p id="humidity"></p>
+          </div>
+          <div class="description-card">
+            <p class="title">Wind Speed</p>
+            <p id="wind-speed"></p>
+          </div>
+        </div>
+      </section>
+      <section id="daily-forecast"></section>
     </main>
-</body>
+  </body>
 </html>
