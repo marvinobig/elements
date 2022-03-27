@@ -40,7 +40,9 @@ function dailyWeatherDisplay(data) {
 
     dailyDay.textContent = `D${i}`;
     dailyIcon.src = `http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
-    temp.textContent = `${Math.round(data.daily[i].temp.min)}° / ${Math.round(data.daily[i].temp.max)}°`;
+    temp.textContent = `${Math.round(data.daily[i].temp.min)}° / ${Math.round(
+      data.daily[i].temp.max
+    )}°`;
     description.textContent = `${data.daily[i].weather[0].description}`;
 
     dailyCardContainer.appendChild(dailyCard);

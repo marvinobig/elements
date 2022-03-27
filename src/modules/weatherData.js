@@ -1,4 +1,8 @@
-import { dailyWeatherDisplay, currentWeatherDisplay, locationDisplay } from "./weatherDisplay"
+import {
+  dailyWeatherDisplay,
+  currentWeatherDisplay,
+  locationDisplay,
+} from "./weatherDisplay";
 
 let lat = 0;
 let lon = 0;
@@ -15,12 +19,12 @@ async function getLocationCoordinates() {
 
   const result = await coordinates.json();
 
-  locationDisplay(result[0])
+  locationDisplay(result[0]);
 
   lat = result[0].lat;
   lon = result[0].lon;
 
-  getWeatherData().catch(err => console.log(err));
+  getWeatherData().catch((err) => console.log(err));
 }
 
 async function getWeatherData() {
