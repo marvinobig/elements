@@ -76,7 +76,8 @@ body {
 
 #weather-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
   place-items: center center;
   gap: 20px;
 }
@@ -89,6 +90,7 @@ body {
   gap: 10px;
   height: 400px;
   width: 100%;
+  max-width: 800px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.249);
   backdrop-filter: blur(10px);
@@ -143,6 +145,7 @@ body {
   align-items: center;
   height: 400px;
   width: 100%;
+  max-width: 800px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.249);
   backdrop-filter: blur(10px);
@@ -164,12 +167,11 @@ body {
 }
 
 .daily-card {
-  display: flex;
-  justify-content: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   gap: 10px;
   width: 100%;
-  max-width: 320px;
   padding-left: 20px;
 }
 
@@ -184,13 +186,6 @@ body {
 }
 
 @media only screen and (max-width: 720px) {
-  #weather-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    place-items: center center;
-    gap: 20px;
-  }
-
   #daily-forecast {
     justify-content: start;
     max-height: 150px;
