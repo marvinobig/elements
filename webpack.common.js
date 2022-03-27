@@ -5,8 +5,8 @@ module.exports = {
     app: './src/index.js',
   },
   output: {
-    filename: 'element.bundle.js',
-    path: path.resolve(__dirname, 'public/script'),
-    clean: true,
+    filename: 'script/element.bundle.js',
+    path: path.resolve(__dirname, 'public'),
+    clean: false,
   },
 };
