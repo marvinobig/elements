@@ -11,7 +11,7 @@ function currentWeatherDisplay(data) {
   const humidity = document.getElementById("humidity");
   const windSpeed = document.getElementById("wind-speed");
 
-  icon.src = `http://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`;
+  icon.src = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`;
   icon.alt = "current weather icon";
   temp.textContent = `${Math.round(data.current.temp)}°`;
   description.textContent = `${data.current.weather[0].description}`;
@@ -39,7 +39,7 @@ function dailyWeatherDisplay(data) {
     description.classList.add("daily-description");
 
     dailyDay.textContent = `D${i}`;
-    dailyIcon.src = `http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
+    dailyIcon.src = `https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
     temp.textContent = `${Math.round(data.daily[i].temp.min)}° / ${Math.round(
       data.daily[i].temp.max
     )}°`;
