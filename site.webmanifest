@@ -4,7 +4,7 @@
     "description": "Fetch weather data for a specific location and view a 7 day forecast from the current day.",
     "start_url": "/",
     "id": "/",
-    "scope": "./",
+    "scope": "/",
     "orientation": "portrait",
     "icons": [
         {
