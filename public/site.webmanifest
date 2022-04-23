@@ -2,24 +2,22 @@
     "name": "Elements Weather App",
     "short_name": "Elements",
     "description": "Fetch weather data for a specific location and view a 7 day forecast from the current day.",
-    "start_url": "index.html",
-    "id": "/index.html",
-    "scope": "./",
+    "start_url": ".",
     "orientation": "portrait",
     "icons": [
         {
-            "src": "/public/assets/images/android-chrome-192x192.png",
+            "src": "./assets/images/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/public/assets/images/apple-touch-icon.png",
+            "src": "./assets/images/apple-touch-icon.png",
             "sizes": "180x180",
             "type": "image/png"
         },
         {
-            "src": "/public/assets/images/android-chrome-512x512.png",
+            "src": "./assets/images/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

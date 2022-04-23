@@ -1,17 +1,17 @@
 const cacheName = "elements-v1";
 
 const staticAssets = [
-  "./public",
+  "./",
   "./site.webmanifest",
-  "./public/index.html",
-  "./public/stylesheet/elements.css",
-  "./public/script/element.bundle.js",
-  "./public/assets/images/android-chrome-192x192.png",
-  "./public/assets/images/android-chrome-512x512.png",
-  "./public/assets/images/apple-touch-icon.png",
-  "./public/assets/images/favicon-16x16.png",
-  "./public/assets/images/favicon-32x32.png",
-  "./public/assets/images/mstile-150x150.png",
+  "./index.html",
+  "./stylesheet/elements.css",
+  "./script/element.bundle.js",
+  "./assets/images/android-chrome-192x192.png",
+  "./assets/images/android-chrome-512x512.png",
+  "./assets/images/apple-touch-icon.png",
+  "./assets/images/favicon-16x16.png",
+  "./assets/images/favicon-32x32.png",
+  "./assets/images/mstile-150x150.png",
 ];
 
 self.addEventListener("install", async (e) => {
