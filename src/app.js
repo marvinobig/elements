@@ -5,7 +5,7 @@ import { getLocationCoordinates } from "./modules/weatherData";
 // PWA functionality
 if ("serviceWorker" in navigator && "PushManager" in window) {
   navigator.serviceWorker
-    .register("../sw.js")
+    .register("./sw.js")
     .catch((err) => console.log("Service Worker Not Registered", err));
 }
 
