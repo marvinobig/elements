@@ -2,7 +2,7 @@
   "name": "elements",
   "version": "1.0.0",
   "description": "A weather app to show the current weather and 7 day forcast of any location.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "watch": "webpack --watch",
     "start": "webpack serve --open --config webpack.dev.js",
