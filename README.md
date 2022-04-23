@@ -15,7 +15,7 @@ An app that allows users to fetch weather data for a specific location. It also 
 - Favicon.cc
 
 ## Live Link 
-[Elements](https://elements-wa.netlify.app/)
+[Elements Weather App](https://elements-wa.netlify.app/)
 
 ## Installation
 
