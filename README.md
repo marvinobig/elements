@@ -30,7 +30,7 @@ npm install
 ## Usage
 
 ```terminal
-npm run start
+npm run build
 ```
 
 ## Contributing
