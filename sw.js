@@ -1,7 +1,7 @@
 const cacheName = "elements-v1";
 
 const staticAssets = [
-  "./public",
+  "./",
   "./site.webmanifest",
   "./public/index.html",
   "./public/stylesheet/elements.css",
